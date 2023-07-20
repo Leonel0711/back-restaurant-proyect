@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./header/headerUser') %>
+        <title>Super Restaurant</title>
+</head>
+
+<body>
+    <%- include('./components/navbar') %>
+
+        <header>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="imgContCarousel">
+                            <video src="./img/anuncios/SpiderBurger-Anuncio.mp4" autoplay="true" muted="true"
+                                poster="https://carontestudio.com/img/contacto.jpg"></video>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="imgContCarousel">
+                            <video src="./img/anuncios/CapBurger-Anuncio.mp4" autoplay="true" muted="true"
+                                poster="https://carontestudio.com/img/contacto.jpg"></video>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="imgContCarousel">
+                            <img src="./img/anuncios/IronBurger-Anuncio.png" class="d-block" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class="cards-container">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/comida/carnosa.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo La carnosa</h5>
+                        <p class="card-text">La hamburguesa con mas carne, es una hamburguesacon dos medallones rellenos
+                            de dos hamburguesas simples</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/comida/cervecera.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo La Cervecera</h5>
+                        <p class="card-text">Una gran hamburguesa con nachos y un par de cervezas rubia y negra</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/comida/combo-dia.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo del dia</h5>
+                        <p class="card-text">Una hamburguesa con gaseosa lista en 5 minutos para los que viven rapido
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="cont-desafio">
+                <div class="cont-desafio-img">
+                    <p class="fs-1">ADVERTENCIA</p>
+                    <img src="./img/comida/reto-revienta-arteria.png" alt="">
+                </div>
+                <div class="cont-desafio-info">
+                    <h2>EL RETO REVIENTA ARTERIAS</h2>
+                    <p>Cuando una vaca se come a otra vaca.
+                        <br>
+                        Cuando un cerdo se come a otro cerdo.
+                        <br>
+                        Cuando una lechuga se come a otra lechuga.
+                    </p>
+                    <p><b>Nace la REVIENTA ARTERIAS</b></p>
+                    <p>Exclusivo solo para comer en sucursal, si te comes el combo en menos de 15 minutos, el combo va
+                        por la casa.</p>
+                </div>
+            </div>
+        </main>
+        <%- include('./components/footer') %>
+            <%- include('./scripts') %>
+
+
+</body>
+
+</html>

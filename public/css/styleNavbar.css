@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #19284c9f;
+}
+
+.logo-link {
+    margin: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav-list {
+    display: none;
+}
+
+
+.hide-Navbar {
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cont-Nav {
+    display: none;
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(100%);
+}
+
+.show-Cont-Navbar-Hide {
+    opacity: 1;
+    visibility: visible;
+}
+
+.show-Cont-Navbar {
+    display: block;
+    transform: translateX(0%);
+}
+
+.list-nav-hide {
+    padding: 0;
+}
+
+.list-nav-hide li {
+    list-style: none;
+}
+
+.list-nav-hide li a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.list-nav-hide li a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+
+}
+
+.cont-btn-hide-nav {
+    margin: 0 1rem;
+}
+
+#btn-Hide-Navbar:hover {
+    background-color: white;
+}
+
+.cont-btn-close-nav {
+    display: flex;
+    justify-content: end;
+}
+
+#btn-Hide-Navbar-Close {
+    color: white;
+    margin: 1rem 1rem;
+}
+
+#btn-Hide-Navbar-Close:hover {
+    color: #1c1c1c;
+    background-color: white;
+}
+
+@media screen and (min-width:768px) {
+    .cont-btn-hide-nav {
+        display: none;
+    }
+
+    .btn-Hide-Nav {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 1rem;
+        margin: 1rem;
+        padding: 0;
+    }
+
+
+
+    .nav-list li {
+        list-style: none;
+    }
+
+    .nav-list li a {
+        display: inline-block;
+        color: white;
+        border-bottom: 3px solid transparent;
+        padding: 3px;
+        text-decoration: none;
+        transition: all 400ms ease;
+    }
+
+    .nav-list li a:hover {
+        border-bottom: 3px solid #c7c7c7;
+
+    }
+
+    .nav-list li a:active {
+        transform: scale(0.9);
+        transition: 0.5ms;
+    }
+}

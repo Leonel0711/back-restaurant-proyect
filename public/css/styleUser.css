@@ -1,0 +1,76 @@
+.imgContCarousel {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imgContCarousel video {
+    width: 100%;
+}
+
+.imgContCarousel img {
+    width: 100%;
+}
+
+main {
+    margin: 1rem 0;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 3rem;
+}
+
+.cont-desafio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(212, 212, 212);
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.cont-desafio-img {
+    position: relative;
+    max-width: 400px;
+    min-width: 200px;
+}
+
+.cont-desafio-img img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.cont-desafio-img p {
+    top: 40%;
+    left: 20%;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    color: rgb(223, 2, 2);
+    rotate: -45deg;
+    border-top: 4px solid rgb(223, 2, 2);
+    border-bottom: 4px solid rgb(223, 2, 2);
+}
+
+@media screen and (max-width:768) {
+    .cont-desafio-img p {
+        position: absolute;
+        color: rgb(223, 2, 2);
+        rotate: -45deg;
+        border-top: 4px solid rgb(223, 2, 2);
+        border-bottom: 4px solid rgb(223, 2, 2);
+    }
+}
+
+.cont-desafio-info {
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 1rem;
+    border: 2px solid rgb(177, 177, 177);
+}

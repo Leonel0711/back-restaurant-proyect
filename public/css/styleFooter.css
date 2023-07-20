@@ -1,0 +1,61 @@
+.cont-Footer {
+    background-color: #1c1c1c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.subCont-Footer {
+    max-width: 400px;
+    min-width: 200px;
+}
+
+.cont-info-footer h2,
+.cont-info-footer p {
+    color: white;
+}
+
+.list-Footer {
+    list-style: none;
+}
+
+.list-Footer li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.list-Footer li a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+
+.title-Redes-Footer {
+    color: white;
+
+}
+
+.links-redes-Footer {
+    display: flex;
+    gap: 1rem;
+}
+
+.link-red-footer {
+    text-decoration: none;
+}
+
+.link-red-footer svg {
+    width: 30px;
+    height: 30px;
+    color: white;
+    transition: all 100ms ease;
+}
+
+.link-red-footer svg:hover {
+    color: #b4b4b4;
+}
